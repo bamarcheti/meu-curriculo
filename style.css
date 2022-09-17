@@ -8,30 +8,35 @@
 
 body {
     background-color: #eaeeeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.resume-contents {
+.container {
+    position: relative;
+    width: 90%;
+
     min-height: 100vh;
-    width: 80%;
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
 
-.left-section {
+.container .left-section {
     grid-column: span 2;
     height: 100%;
     background-color: #dc5436;
 }
 
-.right-section {
+.container .right-section {
     grid-column: span 5;
     height: 100%;
     background-color: #ffb790;
     border-radius: 0px 60px 0px 0px;
+    padding: 2rem 2rem;
 }
-
-
 
 .profile {
     width: 100%;
@@ -63,8 +68,13 @@ body {
 }
 
 .contact-info {
+    padding: 8px;
     border-bottom: 2px solid #d6dbdfaf; 
-} 
+}
+
+.skills {
+    padding: 8px;
+}
 
 .left-title {
     color: #ffffff;
@@ -75,6 +85,71 @@ body {
     display: flex;
     align-items: center;
     padding-top: 3rem;
+}
+
+.skills .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.skills .box .exp-time-period {
+    min-width: 150px;
+}
+
+.skills .box .exp-time-period h5 {
+    text-transform: uppercase;
+    color: #d6dbdfaf;
+    font-weight: 600;
+}
+
+.skills .box .text h4 {
+    text-transform: uppercase;
+    color: #4f4464;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #d6dbdfaf;
+    font-weight: 500;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #4f4464;
+}
+
+a {
+    color: #d6dbdfaf;
+    margin-left: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .contact-info ul {
@@ -127,10 +202,6 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     padding-bottom: .4rem;
-}
-
-.right-section-contents {
-    padding: 2rem 2rem;
 }
 
 .right-title {
@@ -224,20 +295,8 @@ body {
     
 }
 
-@media screen and (max-width:1200px) {
-    .resume-contents {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media screen and (max-width:1200px) {
-    .resume-contents {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media screen and (max-width:390px) {
-    .resume-contents {
+@media (max-width:600px) {
+    .container {
         width: 100%;
         margin: 0 auto;
     }

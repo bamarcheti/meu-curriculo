@@ -1,6 +1,6 @@
 # __Meu Currículo__
 
-![preview](./.github/preview.png)
+![preview](./.github/certificadoJornadaDev.png)
 
 Projeto construído do evento da Jornada Dev - EBAC com o objetivo da construção do seu currículo online.
 
@@ -10,6 +10,10 @@ Projeto construído do evento da Jornada Dev - EBAC com o objetivo da construç�
 - HTML
 - CSS
 - Git e GitHub
+
+## __Certificado__
+
+![preview](./.github/certificadoJornadaDev.png)
 
 ## __💛 Contato__
 
