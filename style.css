@@ -1,46 +1,52 @@
+:root {
+    --background: #2e2d2d;
+    --very-dark-blue: #2c2e43;
+    --dark-desaturated-blue: #1b1e34;
+    --white: #ffffff;
+    --gray-300: #888585;
+    --gray-400: #cbd5e0;
+}
+
+/* Reset */
+
 * {
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: "Times New Roman", sans-serif;
 }
 
 body {
-    background-color: #eaeeeb;
+    margin: 0;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    position: relative;
+    width: 100%;
 }
 
 .container {
-    position: relative;
-    width: 90%;
-
-    min-height: 100vh;
-    margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
 
 .container .left-section {
-    grid-column: span 2;
-    height: 100%;
-    background-color: #dc5436;
+    padding: 30px;
+    grid-column: span 1;
+    background-color: var(--background);
 }
 
 .container .right-section {
-    grid-column: span 5;
-    height: 100%;
+    grid-column: span 6;
     background-color: #ffb790;
-    border-radius: 0px 60px 0px 0px;
     padding: 2rem 2rem;
 }
 
 .profile {
     width: 100%;
-    border-bottom: 2px solid #d6dbdfaf;
+    border-bottom: 2px solid var(--gray-300);
 }
 
 .profile .MyProfile {
@@ -48,7 +54,7 @@ body {
 }
 
 .name {
-    color: #D6DBDF;
+    color: var(--gray-300);
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -58,7 +64,7 @@ body {
 }
 
 .profession {
-    color: #ffffff;
+    color: var(--gray-300);
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -69,7 +75,7 @@ body {
 
 .contact-info {
     padding: 8px;
-    border-bottom: 2px solid #d6dbdfaf; 
+    border-bottom: 2px solid var(--gray-300); 
 }
 
 .skills {
@@ -87,6 +93,33 @@ body {
     padding-top: 3rem;
 }
 
+/* .left-title li {
+    border: 1px solid var(--gray-300);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-align: center;
+    transition: background-color .6s;
+}
+
+.left-title li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.left-title li i {
+    color: var(--gray-300);
+    text-decoration: none;
+    transition: color .6s;
+}
+
+.left-title li:hover {
+    background-color: var(--very-dark-blue);
+}
+
+.left-title li:hover i {
+    color: var(--gray-400);
+} */
+
 .skills .box {
     display: flex;
     flex-direction: row;
@@ -99,13 +132,13 @@ body {
 
 .skills .box .exp-time-period h5 {
     text-transform: uppercase;
-    color: #d6dbdfaf;
+    color: var(--gray-300);
     font-weight: 600;
 }
 
 .skills .box .text h4 {
     text-transform: uppercase;
-    color: #4f4464;
+    color: var(--very-dark-blue);
     font-size: 16px;
 }
 
@@ -120,7 +153,7 @@ body {
 
 .skills .box h4 {
     text-transform: uppercase;
-    color: #d6dbdfaf;
+    color: var(--gray-300);
     font-weight: 500;
 }
 
@@ -128,7 +161,7 @@ body {
     position: relative;
     width: 100%;
     height: 10px;
-    background: #f0f0f0;
+    background: var(--white);
 }
 
 .skills .box .percent div {
@@ -136,11 +169,11 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    background: #4f4464;
+    background: var(--dark-desaturated-blue);
 }
 
 a {
-    color: #d6dbdfaf;
+    color: var(--gray-300);
     margin-left: 20px;
 }
 
@@ -161,7 +194,7 @@ a:hover {
     padding: .4rem 0;
     display: flex;
     align-items: center;
-    color: #d6dbdfaf;
+    color: var(--gray-300);
     letter-spacing: 1px;
     font-size: 18px;
 }
@@ -170,7 +203,7 @@ a:hover {
 .references ul li i {
     padding-right: 1rem;
     font-size: 18px;
-    color: #2E86C1;
+    color: var(--white);
 }
 
 .skills ul {
@@ -179,7 +212,7 @@ a:hover {
 
 .skills ul li p {
     padding: .4rem 0;
-    color: #d6dbdfaf;
+    color: var(--gray-300);
     font-size: 18px;
     letter-spacing: 1px;
     display: flex;
@@ -187,25 +220,10 @@ a:hover {
     text-transform: uppercase;
 }
 
-.referance-name {
-    padding-top: 1.5rem;
-    padding-bottom: .4rem;
-    font-size: 18px;
-    color: #F9E79F;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
 
-.referance-profession {
-    font-size: 16px;
-    color: #d6dbdfaf;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding-bottom: .4rem;
-}
 
 .right-title {
-    color: #4f4464;
+    color: var(--very-dark-blue);
     font-size: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -223,7 +241,7 @@ a:hover {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 2rem;
-    color: #F1F8FD;
+    color: var(--white);
 }
 
 .experience-contents,
@@ -232,7 +250,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     padding-bottom: 2rem;
-    color: #F1F8FD;
+    color: var(--white);
 }
 
 .exp-company-name,
@@ -242,7 +260,7 @@ a:hover {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #a2a5a79a;
+    color: var(--gray-300);
     padding-bottom: .4rem;
 }
 
@@ -261,7 +279,7 @@ a:hover {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #a2a5a79a;
+    color: var(--gray-300);
     padding-bottom: .4rem;
 }
 
@@ -271,7 +289,7 @@ a:hover {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.5rem;
-    border-left: 3px solid #a5a3a3;
+    border-left: 3px solid var(--gray-400);
     padding-left: 5px;
 }
 
