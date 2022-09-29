@@ -22,3 +22,6 @@ bmarchetifiorin@gmail.com_**
 
 > **_Instagram
 https://www.instagram.com/ba_marcheti/_**
+
+> **LinkedIn
+https://www.linkedin.com/in/barbara-marcheti-fiorin/_**
