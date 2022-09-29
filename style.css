@@ -93,33 +93,6 @@ body {
     padding-top: 3rem;
 }
 
-/* .left-title li {
-    border: 1px solid var(--gray-300);
-    border-radius: 20px;
-    cursor: pointer;
-    padding: 8px 16px;
-    text-align: center;
-    transition: background-color .6s;
-}
-
-.left-title li:not(:last-child) {
-    margin-bottom: 12px;
-}
-
-.left-title li i {
-    color: var(--gray-300);
-    text-decoration: none;
-    transition: color .6s;
-}
-
-.left-title li:hover {
-    background-color: var(--very-dark-blue);
-}
-
-.left-title li:hover i {
-    color: var(--gray-400);
-} */
-
 .skills .box {
     display: flex;
     flex-direction: row;
