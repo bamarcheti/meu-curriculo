@@ -1,10 +1,11 @@
 :root {
     --background: #2e2d2d;
-    --very-dark-blue: #2c2e43;
     --dark-desaturated-blue: #1b1e34;
-    --white: #ffffff;
+    --very-dark-blue: #2c2e43;
+    --soft-orange:#f0a279;
     --gray-300: #888585;
     --gray-400: #cbd5e0;
+    --white: #ffffff;
 }
 
 /* Reset */
@@ -25,24 +26,22 @@ body {
     min-height: 100vh;
     position: relative;
     width: 100%;
+    background-color: var(--background);
 }
 
 .container {
-    display: grid;
+    display: table-row;
     grid-template-columns: repeat(7, 1fr);
 }
+
+/* Left section */
 
 .container .left-section {
     padding: 30px;
     grid-column: span 1;
-    background-color: var(--background);
 }
 
-.container .right-section {
-    grid-column: span 6;
-    background-color: #ffb790;
-    padding: 2rem 2rem;
-}
+/* Profile */
 
 .profile {
     width: 100%;
@@ -66,24 +65,22 @@ body {
 .profession {
     color: var(--gray-300);
     font-size: 20px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 2px;
     font-weight: bold;
     padding-bottom: 1rem;
 }
+
+/* Contact info */
 
 .contact-info {
     padding: 8px;
     border-bottom: 2px solid var(--gray-300); 
 }
 
-.skills {
-    padding: 8px;
-}
-
 .left-title {
-    color: #ffffff;
+    color: var(--white);
     font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -93,39 +90,58 @@ body {
     padding-top: 3rem;
 }
 
-.skills .box {
+.contact-info ul {
+    padding-top: 1.5rem;
+}
+
+.contact-info ul li {
+    padding: .4rem 0;
     display: flex;
-    flex-direction: row;
-    margin: 20px 0;
-}
-
-.skills .box .exp-time-period {
-    min-width: 150px;
-}
-
-.skills .box .exp-time-period h5 {
-    text-transform: uppercase;
+    align-items: center;
     color: var(--gray-300);
-    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
-.skills .box .text h4 {
-    text-transform: uppercase;
-    color: var(--very-dark-blue);
-    font-size: 16px;
+.contact-info ul li i {
+    padding-right: 1rem;
+    font-size: 18px;
+    color: var(--white);
+}
+
+a {
+    color: var(--gray-300);
+    margin-left: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Skills */
+
+.skills {
+    padding: 8px;
 }
 
 .skills .box {
-    position: relative;
     width: 100%;
-    display: grid;
+    margin: 20px 0;
+    position: relative;
     grid-template-columns: 150px 1fr;
+    display: grid;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .skills .box h4 {
     text-transform: uppercase;
+    font-size: 16px;
     color: var(--gray-300);
     font-weight: 500;
 }
@@ -145,55 +161,19 @@ body {
     background: var(--dark-desaturated-blue);
 }
 
-a {
-    color: var(--gray-300);
-    margin-left: 20px;
+/* Right section */
+
+.container .right-section {
+    grid-column: span 6;
+    background-color: var(--soft-orange);
+    padding: 2rem 2rem;
 }
 
-a:link {
-    text-decoration: none;
+/* About */
+
+.gap {
+    padding-bottom: 2rem;
 }
-
-a:hover {
-    text-decoration: none;
-}
-
-.contact-info ul {
-    padding-top: 1.5rem;
-}
-
-.contact-info ul li,
-.references ul li {
-    padding: .4rem 0;
-    display: flex;
-    align-items: center;
-    color: var(--gray-300);
-    letter-spacing: 1px;
-    font-size: 18px;
-}
-
-.contact-info ul li i,
-.references ul li i {
-    padding-right: 1rem;
-    font-size: 18px;
-    color: var(--white);
-}
-
-.skills ul {
-    padding-top: 1.5rem;
-}
-
-.skills ul li p {
-    padding: .4rem 0;
-    color: var(--gray-300);
-    font-size: 18px;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-}
-
-
 
 .right-title {
     color: var(--very-dark-blue);
@@ -207,15 +187,14 @@ a:hover {
     position: relative;
 }
 
-.gap {
-    padding-bottom: 2rem;
-}
 .about-me-contents {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 2rem;
     color: var(--white);
 }
+
+/* Experience, Education and Awards */
 
 .experience-contents,
 .education-contents,
@@ -282,8 +261,7 @@ a:hover {
     
     .right-section {
         grid-column: span 4;
-    }
-    
+    } 
 }
 
 @media (max-width:600px) {
@@ -308,18 +286,16 @@ a:hover {
         font-size: 18px;
     }
 
-    .contact-info ul li,
-    .references ul li {
+    .contact-info ul li {
         font-size: 12px;
     }
 
-    .contact-info ul li i,
-    .references ul li i {
+    .contact-info ul li i {
         padding-right: 1rem;
         font-size: 12px;
     }
 
-    .skills ul li p {
+    .skills p {
         font-size: 12px;
     }
 
