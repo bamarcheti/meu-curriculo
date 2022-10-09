@@ -16,7 +16,7 @@ Projeto construído do evento da Jornada Dev - EBAC com o objetivo da construç�
 
 ## __Certificado__
 
-![preview](./.github/certificadoJornadaUx.png)
+![preview](./.github/certificadoJornadaUX.png)
 ![preview](./.github/certificadoJornadaDev.png)
 ![preview](./.github/CertificadoProdutividadeEAltaPerformance.png)
 ![preview](./.github/CertificadoIntroducaoAInteligenciaArtificial.png)
