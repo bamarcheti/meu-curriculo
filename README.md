@@ -13,15 +13,6 @@ Projeto construído do evento da Jornada Dev - EBAC com o objetivo da construç�
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-
-## __Certificado__
-
-![preview](./.github/certificadoJornadaUX.png)
-![preview](./.github/certificadoJornadaDev.png)
-![preview](./.github/CertificadoProdutividadeEAltaPerformance.png)
-![preview](./.github/CertificadoIntroducaoAInteligenciaArtificial.png)
-
-
 ## __💛 Contato__
 
 [<img src='https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About&logoColor=white' alt='Website' height='30'>](https://my-resume-bamarcheti.vercel.app/)
