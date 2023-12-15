@@ -4,7 +4,7 @@
 
 Projeto construído do evento da Jornada Dev - EBAC com o objetivo da construção do seu currículo online.
 
-[🔗 Clique aqui para acessar](https://bamarcheti.github.io/MeuCurriculo/)
+[🔗 Clique aqui para acessar](https://bamarcheti.github.io/meu-curriculo/)
 
 
 ## __🛠 Tecnologias__
