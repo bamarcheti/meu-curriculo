@@ -1,197 +1,200 @@
 :root {
-    --background: #2e2d2d;
-    --dark-desaturated-blue: #1b1e34;
-    --very-dark-blue: #2c2e43;
-    --soft-orange:#f0a279;
-    --gray-300: #888585;
-    --gray-400: #cbd5e0;
-    --white: #ffffff;
+  --background: #2e2d2d;
+  --dark-desaturated-blue: #1b1e34;
+  --very-dark-blue: #2c2e43;
+  --soft-orange: #f0a279;
+  --gray-300: #888585;
+  --gray-400: #cbd5e0;
+  --white: #ffffff;
 }
 
 /* Reset */
 
 * {
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    margin: 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    position: relative;
-    width: 100%;
-    background-color: var(--background);
+  background-color: var(--background);
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 /* Left section */
 
-.container .left-section {
-    padding: 30px;
-    grid-column: span 1;
+.left-section {
+  grid-column: span 2;
+  border-bottom: none;
+  padding: 2rem 2rem;
 }
 
 /* Profile */
 
 .profile {
-    width: 100%;
-    border-bottom: 2px solid var(--gray-300);
+  width: 100%;
+  border-bottom: 2px solid var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
 
-.profile .MyProfile {
-    width: 100%;
+.profile .myProfile {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
 }
 
-.name {
-    color: var(--gray-300);
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    padding: 1rem 0;
-}
-
+.name,
 .profession {
-    color: var(--gray-300);
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 1rem;
+  color: var(--gray-300);
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.left-title {
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
 }
 
 /* Contact info */
 
-.contact-info {
-    padding: 8px;
-    border-bottom: 2px solid var(--gray-300); 
-}
-
-.left-title {
-    color: var(--white);
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    padding-top: 3rem;
-}
+/* .contact-info {
+  padding: 8px;
+  border-bottom: 2px solid var(--gray-300);
+} */
 
 .contact-info ul {
-    padding-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .contact-info ul li {
-    padding: .4rem 0;
-    display: flex;
-    align-items: center;
-    color: var(--gray-300);
-    letter-spacing: 1px;
-    font-size: 18px;
+  padding: 0.4rem 0;
+  display: flex;
+  align-items: center;
+  color: var(--gray-300);
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 .contact-info ul li i {
-    padding-right: 1rem;
-    font-size: 18px;
-    color: var(--white);
+  padding-right: 1rem;
+  font-size: 18px;
+  color: var(--white);
 }
 
 a {
-    color: var(--gray-300);
-    margin-left: 20px;
+  color: var(--gray-300);
 }
 
 a:link {
-    text-decoration: none;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Skills */
 
+.contact-info,
 .skills {
-    padding: 8px;
+  padding: 7px;
+}
+
+.skills ul {
+  padding: 1.5rem;
 }
 
 .skills .box {
-    width: 100%;
-    margin: 20px 0;
-    position: relative;
-    grid-template-columns: 150px 1fr;
-    display: grid;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+  grid-template-columns: 150px 1fr;
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills .box h4 {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: var(--gray-300);
-    font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--gray-300);
+  font-weight: 500;
 }
 
 .skills .box .percent {
-    position: relative;
-    width: 100%;
-    height: 10px;
-    background: var(--white);
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: var(--white);
 }
 
 .skills .box .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: var(--dark-desaturated-blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--dark-desaturated-blue);
 }
 
 /* Right section */
 
-.container .right-section {
-    grid-column: span 6;
-    background-color: var(--soft-orange);
-    padding: 2rem 2rem;
+.right-section {
+  grid-column: span 5;
+  height: 100%;
+  background-color: var(--soft-orange);
+  border-radius: 0px 60px 0px 0px;
+  padding: 2rem 2rem;
 }
 
 /* About */
 
 .gap {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .right-title {
-    color: var(--very-dark-blue);
-    font-size: 40px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    padding: 2rem 0;
-    position: relative;
+  color: var(--very-dark-blue);
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
 }
 
-.about-me-contents {
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 2rem;
-    color: var(--white);
+.description {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  color: var(--white);
 }
 
 /* Experience, Education and Awards */
@@ -199,126 +202,181 @@ a:hover {
 .experience-contents,
 .education-contents,
 .awards-contents {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    padding-bottom: 2rem;
-    color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  padding-bottom: 2rem;
+  color: var(--white);
 }
 
-.exp-company-name,
-.education-school-name,
-.awards-company-name {
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--gray-300);
-    padding-bottom: .4rem;
+.subTitle {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray-300);
+  padding-bottom: 0.4rem;
 }
 
-.exp-time-period,
-.education-time-period,
-.awards-time-period {
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 2rem;
+.description {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 2rem;
 }
 
-.exp-position,
-.education-subject,
-.awards-name {
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--gray-300);
-    padding-bottom: .4rem;
+.subTitle {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray-300);
+  padding-bottom: 0.4rem;
 }
 
-.exp-desc,
-.education-desc,
-.awards-desc {
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 1.5rem;
-    border-left: 3px solid var(--gray-400);
-    padding-left: 5px;
+.description {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  border-left: 3px solid var(--gray-400);
+  padding-left: 5px;
 }
 
 /* Media queries */
-@media screen and (max-width:780px) {
-    .experience-contents,
-    .education-contents,
-    .awards-contents {
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media screen and (max-width: 1024px) {
+  .contact-info ul li {
+    font-size: 12px;
+  }
+
+  .contact-info ul li i {
+    font-size: 16px;
+  }
+
+  .name,
+  .profession,
+  .left-title,
+  .right-title {
+    font-size: 18px;
+    padding: 1rem 0;
+  }
+
+  .description,
+  .experience-contents,
+  .education-contents,
+  .awards-contents,
+  .subTitle {
+    font-size: 16px;
+  }
 }
 
-@media screen and (max-width:780px) {
-    .left-section {
-        grid-column: span 3;
-    }
-    
-    .right-section {
-        grid-column: span 4;
-    } 
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info ul li {
+    font-size: 14px;
+  }
+
+  .skills ul li p {
+    font-size: 14px;
+    padding: 0.4rem 0;
+  }
+
+  .name,
+  .profession,
+  .left-title,
+  .right-title {
+    font-size: 16px;
+    padding: 1rem 0;
+  }
+
+  .description,
+  .experience-contents,
+  .education-contents,
+  .awards-contents,
+  .subTitle {
+    font-size: 12px;
+  }
+
+  .right-section {
+    border-radius: 0px 0px 0px 0px;
+  }
 }
 
-@media (max-width:600px) {
-    .container {
-        width: 100%;
-        margin: 0 auto;
-    }
+@media screen and (max-width: 425px) {
+  body {
+    font-size: 14px;
+  }
 
-    .name {
-        font-size: 20px;
-    }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .profession {
-        font-size: 18px;
-    }
+  .name {
+    font-size: 20px;
+  }
 
-    .left-title {
-        font-size: 18px;
-    }
+  .profession {
+    font-size: 18px;
+  }
 
-    .right-title {
-        font-size: 18px;
-    }
+  .left-title {
+    font-size: 18px;
+  }
 
-    .contact-info ul li {
-        font-size: 12px;
-    }
+  .right-section {
+    border-radius: 0px 0px 0px 0px;
+  }
 
-    .contact-info ul li i {
-        padding-right: 1rem;
-        font-size: 12px;
-    }
+  .right-title {
+    font-size: 16px;
+    padding: 1rem 0;
+  }
 
-    .skills p {
-        font-size: 12px;
-    }
+  .contact-info ul li {
+    font-size: 16px;
+  }
 
-    .about-me-contents {
-        font-size: 16px;
-        line-height: 1.5rem;
-    }
+  .contact-info ul li i {
+    font-size: 16px;
+  }
 
-    .exp-company-name,
-    .education-school-name,
-    .awards-company-name {
-        font-size: 18px;
-    }
+  .skills ul li p {
+    font-size: 16px;
+    padding: 0.4rem 0;
+  }
 
-    .exp-time-period,
-    .educationp-time-period,
-    .awards-time-period {
-        font-size: 16px;
-    }
+  .description {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
 
-    .exp-position,
-    .education-subject,
-    .awards-name {
-        font-size: 18px;
-    }
+  .subTitle {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .subTitle {
+    font-size: 18px;
+  }
+
+  .left-section {
+    border-bottom: none;
+  }
+
+  .contact-info ul li i {
+    font-size: 16px;
+  }
+
+  .skills ul li p {
+    padding: 0.4rem 0;
+  }
 }
